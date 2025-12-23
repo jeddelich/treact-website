@@ -10,9 +10,10 @@
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .highlight-color {
@@ -121,7 +122,7 @@ HEADER
 .header__side--left {
     display: flex;
     flex-direction: column;
-    width: calc(100vw / 3);
+    width: 40%;
 }
 
 .header__title {
@@ -155,6 +156,10 @@ HEADER
 
 }
 
+.header__illustration--wrapper {
+    width: 60%;
+}
+
 .header__img {
     margin-top: 16px;
     width: 100%;
@@ -162,7 +167,7 @@ HEADER
 }
 
 .header__illustration--img {
-    max-width: 512px;
+    width: 100%;
 }
 
 .header__email--submission {
@@ -304,4 +309,52 @@ QUALITY WORK SECTION
     font-weight: bold;
 }
 
+/* 
 
+STEPS 
+
+*/
+
+#steps .row {
+    align-items: center;
+}
+
+.list__step {
+    display: flex;
+}
+
+.list__step--number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.step__description {
+    margin-left: 24px;
+}
+
+.steps__illustration--wrapper {
+    width: 50%;
+}
+
+.steps__side--right {
+    width: 50%;
+    padding: 32px 0 32px 64px;
+}
+
+.steps__illustration {
+    width: 100%;
+}
+
+.step__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list__step--para {
+    color: #718096;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 12px;
+}
