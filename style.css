@@ -11,6 +11,7 @@
 .row {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -572,4 +573,93 @@ PRICING
 
 .pricing__list--plan:nth-child(3) .plan__button {
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+/* 
+
+TESTIMONIALS 
+
+*/
+
+.testimonial__bottom {
+    display: flex;
+    margin-top: 24px;
+}
+
+.testimonials__illustration {
+    width: 100%;
+}
+
+.testimonials__illustration--wrapper {
+    width: 40%;
+}
+
+.testimonials__side--right {
+    width: 60%;
+    padding-left: 64px;
+}
+
+.testimonial__rating {
+    margin: 20px 0;
+}
+
+.testimonial__title {
+    color: #4a5568;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.testimonial__para {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(74 85 104);
+}
+
+.testimonial__rating--star {
+    color: rgba(246, 173, 85);
+}
+
+.testimonial__img--wrapper {
+    width: 15%;
+    margin-right: 24px;
+}
+
+.testimonial__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__buttons {
+    display: flex;
+}
+
+.testimonial__button {
+    padding: 16px;
+    border-radius: 50%;
+    border: none;
+    margin: auto 12px;
+    background-color: #edf2f7;
+}
+
+.testimonial__button--icon {
+    color: #6415ff;
+    width: 100%;
+}
+
+.testimonial__profile--name {
+    color: #4a5568;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.testimonial__profile--title {
+    color: #7c8ba1;
+    font-weight: 500;
 }
