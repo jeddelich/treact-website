@@ -663,3 +663,57 @@ TESTIMONIALS
     color: #7c8ba1;
     font-weight: 500;
 }
+
+/* 
+
+GET STARTED 
+
+*/
+
+.get-started__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+}
+
+.get-started__row {
+    display: flex;
+    justify-content: center;
+    padding: 0 92px;
+}
+
+.get-started__title {
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.get-started__button {
+    color: #f7fafc;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin: auto 16px;
+}
+
+.get-started__buttons {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.get-started__button:first-child {
+    background-color: #f56565;
+    border: none;
+}
+
+.get-started__button:last-child {
+    background-color: transparent;
+    border: 1px solid rgb(160, 174, 192);
+}
+
