@@ -8,6 +8,10 @@
     color: #243e63;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .row {
     display: flex;
     justify-content: center;
@@ -31,7 +35,7 @@ p {
 }
 
 .container {
-    padding: 96px 0;
+    padding: 80px 0;
 }
 
 /* 
@@ -41,7 +45,7 @@ NAVIGATION BAR
 */
 
 .nav__container {
-    padding: 32px;
+    padding: 40px 0;
 }
 
 .nav__row {
@@ -58,7 +62,9 @@ NAVIGATION BAR
     font-weight: 900;
     font-size: 24px;
     margin-left: 12px;
+    margin-bottom: 4px;
     align-content: center;
+    cursor: default;
 }
 
 .logo__img--wrapper {
@@ -78,17 +84,61 @@ NAVIGATION BAR
 .nav__link {
     font-size: 14px;
     font-weight: 600;
-    margin: 0 24px;
+    margin: 0 36px;
     align-content: center;
+    position: relative;
 }
 
 .nav__link--anchor {
     color: #243e63;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.nav__link--anchor:hover {
-    text-decoration: underline;
+.not-working {
+    cursor: not-allowed;
+}
+
+.nav__link--underline {
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid #6415ff;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.nav__link--underline-2 {
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid #6415ff;
+    bottom: 2px;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.nav__members {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__link--login {
+    margin-left: 24px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav__link:hover .nav__link--underline {
+    opacity: 1;
+}
+
+.nav__link--login:hover .nav__link--underline-2 {
+    opacity: 1;
 }
 
 .nav__link--primary {
@@ -98,14 +148,17 @@ NAVIGATION BAR
 .nav__button--sign-up {
     border: none;
     padding: 10px 32px;
+    font-weight: 600;
     background-color: #6415ff;
     border-radius: 24px;
     line-height: 1.5;
     cursor: pointer;
+    transition: all 300ms ease;
 }
 
 .nav__button--sign-up:hover {
     cursor: pointer;
+    background-color: #4e11c8;
 }
 
 /* 
