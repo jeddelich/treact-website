@@ -964,3 +964,54 @@ FOOTER
 .footer__icon--wrapper:hover {
   background-color: #d4d9dc;
 }
+
+@media (max-width: 1024px) {
+  .header__row {
+    flex-direction: column;
+  }
+
+  .header__side--left {
+    width: 500px;
+    padding-right: 0;
+  }
+
+  header .container {
+    height: 100%;
+  }
+
+  .header__img {
+    margin-bottom: 32px;
+  }
+
+  .header__title {
+    font-size: 28px;
+  }
+
+  .header__title,
+  .header__description,
+  .header__customers {
+    text-align: center;
+  }
+
+  .header__email--input {
+    margin: 0 auto;
+  }
+
+  .header__img {
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .header__button {
+    width: 35%;
+    left: 53%
+  }
+
+  .nav__list,
+  .nav__members {
+    display: none;
+  }
+
+}
