@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -56,6 +57,34 @@
                 </button>
               </li>
             </ul>
+            <button class="button__menu">
+              <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="button__menu button__menu--close" onclick="closeMenu()">
+                <i class="fa-solid fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#quality-work" class="menu__list--link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__list--link not-working">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#pricing" class="menu__list--link" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__list--link not-working">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__list--link not-working">Login</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__list--link menu__link--primary not-working">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -127,7 +156,8 @@
                   <div class="feature__description">
                     <h2 class="feature__title">Secure</h2>
                     <p class="feature__para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ullam.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt, ullam.
                     </p>
                   </div>
                 </div>
@@ -139,10 +169,11 @@
                       class="feature__img"
                     />
                   </figure>
-                  <div>
+                  <div class="feature__description">
                     <h2 class="feature__title">24/7 Support</h2>
                     <p class="feature__para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sequi?
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex, sequi?
                     </p>
                   </div>
                 </div>
@@ -154,10 +185,11 @@
                       class="feature__img"
                     />
                   </figure>
-                  <div>
+                  <div class="feature__description">
                     <h2 class="feature__title">Customizable</h2>
                     <p class="feature__para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, minima.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ratione, minima.
                     </p>
                   </div>
                 </div>
@@ -169,10 +201,11 @@
                       class="feature__img"
                     />
                   </figure>
-                  <div>
+                  <div class="feature__description">
                     <h2 class="feature__title">Reliable</h2>
                     <p class="feature__para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, possimus!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe, possimus!
                     </p>
                   </div>
                 </div>
@@ -184,10 +217,11 @@
                       class="feature__img"
                     />
                   </figure>
-                  <div>
+                  <div class="feature__description">
                     <h2 class="feature__title">Fast</h2>
                     <p class="feature__para">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, numquam.
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatibus, numquam.
                     </p>
                   </div>
                 </div>
@@ -199,10 +233,11 @@
                       class="feature__img"
                     />
                   </figure>
-                  <div>
+                  <div class="feature__description">
                     <h2 class="feature__title">Easy</h2>
                     <p class="feature__para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nobis.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis, nobis.
                     </p>
                   </div>
                 </div>
@@ -212,7 +247,7 @@
         </div>
       </section>
 
-<!-- QUALITY WORK SECTION -->
+      <!-- QUALITY WORK SECTION -->
 
       <section id="quality-work">
         <div class="container">
@@ -228,7 +263,9 @@
                 quisquam voluptatum esse iusto quae aperiam in suscipit dolorem
                 illum et! Reiciendis?
               </p>
-              <button class="quality-work__button not-working">Learn More</button>
+              <button class="quality-work__button not-working">
+                Learn More
+              </button>
             </div>
             <figure class="quality-work__img--wrapper">
               <img
@@ -254,9 +291,7 @@
               />
             </figure>
             <div class="steps__side--right">
-              <h4 class="section__title">
-                Steps
-              </h4>
+              <h4 class="section__title">Steps</h4>
               <h4 class="section__subtitle">
                 Easy to
                 <span class="highlight-color">Get Started.</span>
@@ -340,7 +375,9 @@
                   </p>
                 </div>
               </div>
-              <button class="quality-work__button not-working">Learn More</button>
+              <button class="quality-work__button not-working">
+                Learn More
+              </button>
             </div>
             <figure class="values__illustration--wrapper">
               <img
@@ -520,8 +557,14 @@
                   Developers all over the world are happily using Treact.
                 </div>
                 <div class="get-started__buttons">
-                  <button class="get-started__button not-working">Get Started</button>
-                  <button class="get-started__button button__effect--invert not-working">Contact Us</button>
+                  <button class="get-started__button not-working">
+                    Get Started
+                  </button>
+                  <button
+                    class="get-started__button button__effect--invert not-working"
+                  >
+                    Contact Us
+                  </button>
                 </div>
               </div>
             </div>
@@ -535,98 +578,98 @@
         <div class="footer__columns">
           <div class="footer__column">
             <div class="footer__column--title">Main</div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Blog</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">FAQs</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Support</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">About Us</a>
-                <div class="footer__link--underline"></div>
-              </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Blog</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">FAQs</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Support</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">About Us</a>
+              <div class="footer__link--underline"></div>
+            </div>
           </div>
           <div class="footer__column">
             <div class="footer__column--title">Product</div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Log In</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Personal</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Business</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Team</a>
-                <div class="footer__link--underline"></div>
-              </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Log In</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Personal</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Business</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Team</a>
+              <div class="footer__link--underline"></div>
+            </div>
           </div>
           <div class="footer__column">
             <div class="footer__column--title">Press</div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Logos</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Events</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Stories</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Office</a>
-                <div class="footer__link--underline"></div>
-              </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Logos</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Events</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Stories</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Office</a>
+              <div class="footer__link--underline"></div>
+            </div>
           </div>
           <div class="footer__column">
             <div class="footer__column--title">Team</div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Career</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Founders</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Culture</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Onboarding</a>
-                <div class="footer__link--underline"></div>
-              </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Career</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Founders</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Culture</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Onboarding</a>
+              <div class="footer__link--underline"></div>
+            </div>
           </div>
           <div class="footer__column">
             <div class="footer__column--title">Legal</div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">GDPR</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Privacy Policy</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Terms of Service</a>
-                <div class="footer__link--underline"></div>
-              </div>
-              <div class="footer__column--link">
-                <a class="footer__column--anchor">Disclaimer</a>
-                <div class="footer__link--underline"></div>
-              </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">GDPR</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Privacy Policy</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Terms of Service</a>
+              <div class="footer__link--underline"></div>
+            </div>
+            <div class="footer__column--link">
+              <a class="footer__column--anchor">Disclaimer</a>
+              <div class="footer__link--underline"></div>
+            </div>
           </div>
         </div>
         <hr class="footer__break" />
